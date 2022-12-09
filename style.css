@@ -1,113 +1,130 @@
-*{
+@font-face {
+  font-family: mario-font;
+  src: url(mario-font.ttf);
+}
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   outline: 0;
-  transition: all 0.5s ease;
-}
-
-body{
-  font-family: sans-serif;
-}
-
-a{
-  text-decoration: none;
-  color: rgb(8, 4, 243);
-}
-
+  font-family: mario-font;
   
-.container{
-  height:100vh;
+}
+
+.container {
+  height: 100vh;
   width: 100vw;
   display: grid;
   place-items: center;
+  background: linear-gradient(to right, rgb(243, 6, 6), rgb(248, 252, 4), rgb(243, 5, 5) 75%, rgb(247, 231, 3));
 }
 
-.calculator{
-  width:auto;
+.calculator {
+  width: auto;
   height: auto;
   box-shadow: 0 0 40px #000;
   border-radius: 10px;
-  padding:30px 20px;
+  padding: 30px 20px;
 }
 
-#display{
+#display {
   margin: 0 10px;
-  height:100px;
-  width:auto;
+  height: 100px;
+  width: auto;
   max-width: 270px;
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
   font-size: 30px;
   margin-bottom: 20px;
-  overflow-x: scroll;
-  border: 1px solid #716e6e12;
-  box-shadow: 0px 0px 9px rgba(240, 6, 6, 0.153);
+  border: 5px solid rgb(251, 255, 3);
+  box-shadow: 0px 0px 9px rgba(255, 253, 253, 0.153);
 }
 
-#display::-webkit-scrollbar{
+#display::-webkit-scrollbar {
   display: block;
   height: 3px;
 }
 
-button{
-  height:60px;
-  width:60px;
-  border:0;
+button {
+  height: 60px;
+  width: 60px;
+  border: 0;
   border-radius: 30px;
-  margin:5px;
-  font-size:30px;
+  margin: 5px;
+  font-size: 30px;
   cursor: pointer;
-  transition: all 200ms ease;
   font-weight: bold;
 }
 
-button:hover{
+button:hover {
   transform: scale(1.15);
 }
 
-#backspace{
+#backspace {
   font-size: 20px;
 }
-#equal{
+
+#equal {
   height: 130px;
-  
+
 }
 
 
-.calculator{
-  background-color: #150707;
+.calculator {
+  background-image: url(https://wallpapers.com/images/high/super-mario-wallpaper-super-mario-iphone-wallpaper-2odcx2b8k8717cjr.jpg)
 }
 
-.calculator #display{
-  color: #f8fafd;
+
+.calculator #display {
+  color: #eeff07;
 }
 
-.calculator #clear{
-  background-color: #121d42;
-  color:#bd3740;
+.calculator #clear {
+  background-color: #f8e806;
+  color: #080001;
 }
 
-.calculator .btn-number{
-  background-color: #1b2f38 ;
-  color:#ffffff;
+.calculator .btn-number {
+  background-color: #fa0f0f;
+  color: #0c08f7;
 }
 
-.calculator button.btn-operator{
-  background-color: #1e1e1f;
-  color: #00ffaa;
+.calculator button.btn-operator {
+  background-color: #2a06f5;
+  color: #f5081c;
 }
 
-.calculator button.btn-equal{
+.calculator button.btn-equal {
   background-color: #def704;
-  color:#000;
+  color: #000;
 }
 
-img{
+img {
   width: 40px;
   height: 50px;
   position: relative;
   object-fit: contain;
   top: 2px;
+}
+
+.coin {
+  position: absolute;
+  width: 60px;
+  height: 80px;
+  border-radius: 50%;
+  border: solid 1px black;
+  animation-name: example;
+  animation-duration: 0.5s;
+}
+
+@keyframes example {
+  from {
+   transform: rotateY(0deg) translateY(100px);
+  }
+
+  to {
+    transform: rotateY(360deg) translateY(-20px);
+  }
 }
