@@ -17,7 +17,7 @@ This is my calculator I'm building along with SEV9.
   - Used Mario theme
   - Used Mario Font for Buttons
   - Replaced backspace button with "Bullet Bill"
-  - Animation of mario coin pops up for each click. 
+  - Animation of mario coin pops up for each click.
 
   
 
