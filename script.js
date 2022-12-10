@@ -35,7 +35,7 @@ function handleEvaluation() {
   if (operator === "÷") {
     return parseFloat(firstNum) / parseFloat(secondNum)
   }
-  
+
 }
 
 //create functional clear button
@@ -44,12 +44,12 @@ for (let button of buttons) {
     console.log(e.target.classList[0] == 'number')
     let num = e.target.dataset.number
     let op = e.target.dataset.operator
-    
+
     if (op === "backspace") {
       return display.innerText = display.innerText.slice(0, -1)
     }
-  
-  if (op === 'AC') {
+
+    if (op === 'AC') {
       display.innerText = ''
       firstNum = 0
       secondNum = 0

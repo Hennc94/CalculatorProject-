@@ -17,7 +17,7 @@
   width: 100vw;
   display: grid;
   place-items: center;
-  background: linear-gradient(to right, rgb(252, 6, 6), rgb(248, 252, 4), rgb(255, 5, 5) 75%, rgb(247, 231, 3));
+  background: black;
 }
 
 .calculator {
