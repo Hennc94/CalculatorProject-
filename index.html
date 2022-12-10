@@ -9,39 +9,40 @@
 <body>
 
   <div class="container">
-  <div class="calculator ">
+  
+<div class="calculator ">
       <div class="display-screen">
         <div id="display"></div>
         <div class="buttons">
           <table>
             <tr>
-              <td><button class="btn-operator" id="clear">AC</button></td>
-              <td><button class="btn-operator" id="/">&divide;</button></td>
-              <td><button class="btn-operator" id="*">&times;</button></td>
-              <td><button class="btn-operator" id="backspace"><img src="BulletBill.png"></button></td>
+              <td><button data-operator="AC" class="btn-operator" id="clear">AC</button></td>
+              <td><button data-operator="÷" class="btn-operator" id="/">&divide;</button></td>
+              <td><button data-operator="*" class="btn-operator" id="*">&times;</button></td>
+              <td><button data-operator="" id="backspace"><img src="BulletBill.png" alt="backspace"></button></td>
             </tr>
             <tr>
-              <td><button class="btn-number" id="7">7</button></td>
-              <td><button class="btn-number" id="8">8</button></td>
-              <td><button class="btn-number" id="9">9</button></td>
-              <td><button class="btn-operator" id="-">-</button></td>
+              <td><button data-number="7" class="btn-number" id="7">7</button></td>
+              <td><button data-number="8" class="btn-number" id="8">8</button></td>
+              <td><button data-number="9" class="btn-number" id="9">9</button></td>
+              <td><button data-operator="-" class="btn-operator" id="-">-</button></td>
             </tr>
             <tr>
-              <td><button class="btn-number" id="4">4</button></td>
-              <td><button class="btn-number" id="5">5</button></td>
-              <td><button class="btn-number" id="6">6</button></td>
-              <td><button class="btn-operator" id="+">+</button></td>
+              <td><button data-number="4" class="btn-number" id="4">4</button></td>
+              <td><button data-number="5" class="btn-number" id="5">5</button></td>
+              <td><button data-number="6" class="btn-number" id="6">6</button></td>
+              <td><button data-operator="+" class="btn-operator" id="+">+</button></td>
             </tr>
             <tr>
-              <td><button class="btn-number" id="1">1</button></td>
-              <td><button class="btn-number" id="2">2</button></td>
-              <td><button class="btn-number" id="3">3</button></td>
-              <td rowspan="2"><button class="btn-operator btn-equal" id="equal">=</button></td>
+              <td><button data-number="1" class="btn-number" id="1">1</button></td>
+              <td><button data-number="2" class="btn-number" id="2">2</button></td>
+              <td><button data-number="3" class="btn-number" id="3">3</button></td>
+              <td rowspan="2"><button data-operator="=" class="btn-equal" id="=">=</button></td>
             </tr>
             <tr>
-              <td><button class="btn-operator" id="()">()</button></td>
-              <td><button class="btn-number" id="0">0</button></td>
-              <td><button class="btn-operator" id=".">.</button></td>
+              <td><button data-operator="()" class="btn-operator" id="()">( )</button></td>
+              <td><button data-number="0" class="btn-number" id="0">0</button></td>
+              <td><button data-operator="." class="btn-operator" id=".">.</button></td>
             </tr>
           </table>
         </div>
