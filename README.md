@@ -14,15 +14,15 @@ This is my calculator I'm building along with SEV9.
 
 # PMVP
 *Post Minimal Viable Product*
-  -Used Mario theme
-  -Used Mario Font for Buttons
-  -Replaced backspace button with "Bullet Bill"
-  -Animation of mario coin pops up upon clicking "="
+  - Used Mario theme
+  - Used Mario Font for Buttons
+  - Replaced backspace button with "Bullet Bill"
+  - Animation of mario coin pops up for each click. 
 
   
 
   
 # Wireframes
- To add picture of calculator:
+ 
 ![wireframe](.\Calculator.PNG)
 

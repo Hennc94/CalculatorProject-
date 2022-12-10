@@ -17,7 +17,7 @@
   width: 100vw;
   display: grid;
   place-items: center;
-  background: linear-gradient(to right, rgb(243, 6, 6), rgb(248, 252, 4), rgb(243, 5, 5) 75%, rgb(247, 231, 3));
+  background: linear-gradient(to right, rgb(252, 6, 6), rgb(248, 252, 4), rgb(255, 5, 5) 75%, rgb(247, 231, 3));
 }
 
 .calculator {
@@ -42,10 +42,6 @@
   box-shadow: 0px 0px 9px rgba(255, 253, 253, 0.153);
 }
 
-#display::-webkit-scrollbar {
-  display: block;
-  height: 3px;
-}
 
 button {
   height: 60px;
@@ -83,13 +79,14 @@ button:hover {
 }
 
 .calculator #clear {
-  background-color: #f8e806;
-  color: #080001;
+  background-color: #0632f8;
+  color: #fa0824;
 }
 
 .calculator .btn-number {
-  background-color: #fa0f0f;
-  color: #0c08f7;
+  background-color: #ffee04;
+  color: #070707;
+  border:#def704;
 }
 
 .calculator button.btn-operator {
@@ -98,7 +95,7 @@ button:hover {
 }
 
 .calculator button.btn-equal {
-  background-color: #def704;
+  background-color: #ffe606;
   color: #000;
   height: 150px;
 }
@@ -116,12 +113,13 @@ img {
   width: 60px;
   height: 80px;
   border-radius: 50%;
+  background-color: yellow;
   border: solid 1px black;
-  animation-name: example;
+  animation-name: mario-coin;
   animation-duration: 0.5s;
 }
 
-@keyframes example {
+@keyframes mario-coin {
   from {
    transform: rotateY(0deg) translateY(100px);
   }
