@@ -60,6 +60,7 @@ button {
 
 button:hover {
   transform: scale(1.15);
+  transition: all .2s ease-in-out;
 }
 
 #backspace {
@@ -99,6 +100,7 @@ button:hover {
 .calculator button.btn-equal {
   background-color: #def704;
   color: #000;
+  height: 150px;
 }
 
 img {
