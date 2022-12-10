@@ -5,6 +5,7 @@ let firstNum = 0
 let secondNum = 0
 let operatorChosen = false
 let operator = ''
+// ifEvaluated = false
 
 function handleOperator(op) {
 
@@ -34,6 +35,7 @@ function handleEvaluation() {
   if (operator ==="÷") {
     return parseFloat(firstNum) / parseFloat(secondNum)
   }
+  // set evaluated to true
   
 }
 
@@ -45,11 +47,12 @@ for (let button of buttons) {
     let op = e.target.dataset.operator
 
     if (op === '=') {
-      display.innerText = handleEvaluation()
+      display.innerText = handleEvaluation() 
       return;
     }
 
     if (num) {
+      // If evaluated is true, clear the display
       display.innerText += num;
     }
     if (op) {
