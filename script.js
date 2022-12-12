@@ -5,6 +5,7 @@ let firstNum = 0
 let secondNum = 0
 let operatorChosen = false
 let operator = ''
+// ifEvaluated = false
 
 
 
@@ -35,7 +36,7 @@ function handleEvaluation() {
   if (operator === "÷") {
     return parseFloat(firstNum) / parseFloat(secondNum)
   }
-
+  
 }
 
 //create functional clear button
@@ -60,10 +61,10 @@ for (let button of buttons) {
 
     if (op === '=') {
       display.innerText = handleEvaluation()
-      return
+      return;
     }
     if (num) {
-      display.innerText += num
+      display.innerText += num;
     }
     if (op) {
       handleOperator(op)
