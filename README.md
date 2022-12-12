@@ -24,5 +24,5 @@ This is my calculator I'm building along with SEV9.
   
 # Wireframes
  
-![wireframe](.\Calculator.PNG)
+![wireframe](./Calculator.PNG)
 
